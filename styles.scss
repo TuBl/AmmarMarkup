@@ -319,7 +319,7 @@ a {
 
 //-------------------------------Mobile Styles------------------------------------------
 
-@media only screen and (max-device-width: 900px) {
+@media only screen and (max-device-width: 640px) {
   //Main
 
   .main {
@@ -584,10 +584,12 @@ a {
 
   //footer styles
   .footer {
-    height: 50px;
+    height: 40px;
     width: 100%;
-    position: absolute;
-    bottom: -150px;
+    z-index: 1;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
     background-color: $fSky;
     text-align: center;
   }
