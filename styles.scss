@@ -338,7 +338,7 @@ a {
   .header {
     background: #000;
     width: 10%;
-    height: 100%;
+    height: 100vh;
     display: grid;
     //   grid-template-columns: 1fr 2fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -449,7 +449,7 @@ a {
   .nav {
     background-color: $bgBlack;
     width: 5rem;
-    height: 100%;
+    height: 110vh;
     list-style: none;
     padding: 1rem;
     display: flex;
@@ -487,7 +487,7 @@ a {
 
   .content {
     width: 100%;
-    height: 100vh;
+    height: 112vh;
     margin: 0 0;
     overflow: hidden;
     background: #000;
@@ -584,10 +584,10 @@ a {
 
   //footer styles
   .footer {
-    height: 50px;
+    height: 40px;
     width: 100%;
     z-index: 1;
-
+    grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 3;
     background-color: $fSky;
