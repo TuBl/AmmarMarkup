@@ -328,7 +328,7 @@ a {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 0.2fr;
+    grid-template-columns: 1fr 2fr auto;
     position: relative;
     overflow-x: hidden;
     -ms-overflow-style: none;
@@ -342,12 +342,9 @@ a {
     width: 10%;
     height: 100vh;
     display: grid;
-    //   grid-template-columns: 1fr 2fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: stretch;
     align-items: stretch;
-    // position: absolute;
-    // z-index: 1;
   }
 
   .reviews {
@@ -437,7 +434,7 @@ a {
     }
     > .contactinfo {
       display: grid;
-      height: 50%;
+      height: 100%;
       width: 50%;
       font-size: 18px;
       justify-items: center;
@@ -588,6 +585,7 @@ a {
   .footer {
     height: 40px;
     width: 100%;
+    z-index: 1;
     grid-row-start: 3;
     grid-row-end: 3;
     background-color: $fSky;
