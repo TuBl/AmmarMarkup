@@ -224,13 +224,14 @@ a {
   > .bgimgs {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     overflow: hidden;
     > .bgimg {
       width: 100%;
       height: 100%;
       position: relative;
       text-align: start;
+      // margin: 0.2rem;
       &[data-tool-tip="Bathrooms"] {
         &:hover {
           &::after {
