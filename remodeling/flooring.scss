@@ -260,7 +260,7 @@ a {
   color: azure;
   &::before {
     content: "";
-    background-image: url("./kitchen.jpg");
+    background-image: url("./flooring.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -291,6 +291,9 @@ a {
     }
     > div:nth-child(3) {
       margin-top: 2rem;
+      p {
+        margin-top: 1rem;
+      }
       ul {
         // list-style: none;
         font-size: 24px;
