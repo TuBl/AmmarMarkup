@@ -145,7 +145,38 @@ a {
   justify-items: center;
   // text-align: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
+  a {
+    text-decoration: none;
+    &:visited {
+      color: $fSky;
+    }
+    li {
+      cursor: pointer;
+      display: inline-block;
+      // padding: 0.5rem;
+      white-space: nowrap;
+      &:hover {
+        transform: scale(1.05);
+        &::after {
+          content: "";
+          display: block;
+          background: $fSky;
+          height: 0px;
+          width: 0%;
+          animation: line 0.2s ease-in forwards;
+        }
+        &:active {
+          &::after {
+            content: "";
+            display: block;
+            background: $fSky;
+            height: 1.2px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
   > li {
     cursor: pointer;
     display: inline-block;
