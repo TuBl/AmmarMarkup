@@ -16,7 +16,11 @@ $tbgBlack: rgb(45, 53, 58);
   padding: 0 0;
 }
 a {
+  cursor: pointer;
   text-decoration: none;
+  &:visited :active {
+    color: $fSky;
+  }
 }
 //Main
 

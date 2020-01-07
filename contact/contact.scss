@@ -17,6 +17,7 @@ $tbgBlue: rgb(47, 87, 173);
   padding: 0 0;
 }
 a {
+  cursor: pointer;
   text-decoration: none;
   &:visited :active {
     color: $fSky;
